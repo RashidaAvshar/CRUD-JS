@@ -8,8 +8,32 @@
     <title>CRUD-JS</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <table id="data-table">
+                <caption>Statement Summary</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Product Catogory</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Product Description</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="data-table-body">
+                  <!-- <tr>
+                    <td data-label="Account">Visa - 3412</td>
+                    <td data-label="Due Date">04/01/2016</td>
+                    <td data-label="Amount">$1,190</td>
+                    <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                  </tr> -->
+                </tbody>
+              </table>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
