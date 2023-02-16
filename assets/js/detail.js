@@ -6,12 +6,7 @@ console.log(id);
 axios(`${BASE_URL}/products/${id}`).then((res)=>{
     console.log(res.data);
 
-    const {image} =res.data;
-    const {price} = res.data;
-    const {title} =res.data;
-    const {description}= res.data;
-    const {category} = res.data;
-    const {id} =res.data;
+    const {image, price, title, description, category, id, rating,} =res.data;
 
     document.querySelector(".card-wrapper").innerHTML = `
     <div class="card">
@@ -45,10 +40,10 @@ axios(`${BASE_URL}/products/${id}`).then((res)=>{
         </div>
       </div>
       <div class="color">
-        <h4>Color</h4>
+        <h4>Rating</h4>
         <div class="colors">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
+          <div class="color-1">${rating.rate}</div>
+          <div class="color-2">${rating.count}</div>
         </div>
       </div>
       <div class="price">
